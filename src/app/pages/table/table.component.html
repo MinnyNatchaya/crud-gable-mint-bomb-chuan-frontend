@@ -1,0 +1,127 @@
+<table
+  mat-table
+  [dataSource]="dataSource"
+  matSort
+  (matSortChange)="announceSortChange($event)"
+  class="mat-elevation-z8"
+>
+  <!-- rowId Column -->
+  <ng-container matColumnDef="rowId">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by rowId"
+    >
+      Row Id
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.rowId }}</td>
+  </ng-container>
+
+  <!-- parRowId Column -->
+  <ng-container matColumnDef="parRowId">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by parRowId"
+    >
+      Par Row Id
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.parRowId }}</td>
+  </ng-container>
+
+  <!-- lovType Column -->
+  <ng-container matColumnDef="lovType">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by lovType"
+    >
+      Lov Type
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.lovType }}</td>
+  </ng-container>
+
+  <!-- lovName Column -->
+  <ng-container matColumnDef="lovName">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by lovName"
+    >
+      Lov Name
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.lovName }}</td>
+  </ng-container>
+
+  <!-- displayVal Column -->
+  <ng-container matColumnDef="displayVal">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by displayVal"
+    >
+      Display Val
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.displayVal }}</td>
+  </ng-container>
+
+  <!-- activeFlg Column -->
+  <ng-container matColumnDef="activeFlg">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by activeFlg"
+    >
+      Active Flg
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.activeFlg }}</td>
+  </ng-container>
+
+  <!-- textDesc Column -->
+  <ng-container matColumnDef="textDesc">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by textDesc"
+    >
+      Text Desc
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.textDesc }}</td>
+  </ng-container>
+
+  <!-- orderBy Column -->
+  <ng-container matColumnDef="orderBy">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by orderBy"
+    >
+      Order By
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.orderBy }}</td>
+  </ng-container>
+
+  <!-- modificationNum Column -->
+  <ng-container matColumnDef="modificationNum">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by modificationNum"
+    >
+      Modification Num
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.modificationNum }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
