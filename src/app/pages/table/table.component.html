@@ -6,121 +6,121 @@
     (matSortChange)="announceSortChange($event)"
     class="mat-elevation-z8"
   >
-    <!-- rowId Column -->
-    <ng-container matColumnDef="rowId">
+    <!-- row_ID Column -->
+    <ng-container matColumnDef="row_ID">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by rowId"
+        sortActionDescription="Sort by row_ID"
       >
         Row Id
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.rowId }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.row_ID }}</td>
     </ng-container>
 
-    <!-- parRowId Column -->
-    <ng-container matColumnDef="parRowId">
+    <!-- par_ROW_ID Column -->
+    <ng-container matColumnDef="par_ROW_ID">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by parRowId"
+        sortActionDescription="Sort by par_ROW_ID"
       >
         Par Row Id
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.parRowId }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.par_ROW_ID }}</td>
     </ng-container>
 
-    <!-- lovType Column -->
-    <ng-container matColumnDef="lovType">
+    <!-- lov_TYPE Column -->
+    <ng-container matColumnDef="lov_TYPE">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by lovType"
+        sortActionDescription="Sort by lov_TYPE"
       >
         Lov Type
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.lovType }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.lov_TYPE }}</td>
     </ng-container>
 
-    <!-- lovName Column -->
-    <ng-container matColumnDef="lovName">
+    <!-- lov_NAME Column -->
+    <ng-container matColumnDef="lov_NAME">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by lovName"
+        sortActionDescription="Sort by lov_NAME"
       >
         Lov Name
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.lovName }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.lov_NAME }}</td>
     </ng-container>
 
-    <!-- displayVal Column -->
-    <ng-container matColumnDef="displayVal">
+    <!-- display_VAL Column -->
+    <ng-container matColumnDef="display_VAL">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by displayVal"
+        sortActionDescription="Sort by display_VAL"
       >
         Display Val
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.displayVal }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.display_VAL }}</td>
     </ng-container>
 
-    <!-- activeFlg Column -->
-    <ng-container matColumnDef="activeFlg">
+    <!-- active_FLG Column -->
+    <ng-container matColumnDef="active_FLG">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by activeFlg"
+        sortActionDescription="Sort by active_FLG"
       >
         Active Flg
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.activeFlg }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.active_FLG }}</td>
     </ng-container>
 
-    <!-- textDesc Column -->
-    <ng-container matColumnDef="textDesc">
+    <!-- text_DESC Column -->
+    <ng-container matColumnDef="text_DESC">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by textDesc"
+        sortActionDescription="Sort by text_DESC"
       >
         Text Desc
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.textDesc }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.text_DESC }}</td>
     </ng-container>
 
-    <!-- orderBy Column -->
-    <ng-container matColumnDef="orderBy">
+    <!-- order_BY Column -->
+    <ng-container matColumnDef="order_BY">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by orderBy"
+        sortActionDescription="Sort by order_BY"
       >
         Order By
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.orderBy }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.order_BY }}</td>
     </ng-container>
 
-    <!-- modificationNum Column -->
-    <ng-container matColumnDef="modificationNum">
+    <!-- modification_NUM Column -->
+    <ng-container matColumnDef="modification_NUM">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by modificationNum"
+        sortActionDescription="Sort by modification_NUM"
       >
         Modification Num
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.modificationNum }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.modification_NUM }}</td>
     </ng-container>
 
     <!-- created Column -->
@@ -136,56 +136,65 @@
       <td mat-cell *matCellDef="let element">{{ element.created | date }}</td>
     </ng-container>
 
-    <!-- createdBy Column -->
-    <ng-container matColumnDef="createdBy">
+    <!-- created_BY Column -->
+    <ng-container matColumnDef="created_BY">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by createdBy"
+        sortActionDescription="Sort by created_BY"
       >
         Created By
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.createdBy }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.created_BY }}</td>
     </ng-container>
 
-    <!-- lastUpd Column -->
-    <ng-container matColumnDef="lastUpd">
+    <!-- last_UPD Column -->
+    <ng-container matColumnDef="last_UPD">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by lastUpd"
+        sortActionDescription="Sort by last_UPD"
       >
         Last Upd
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.lastUpd | date }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.last_UPD | date }}</td>
     </ng-container>
 
-    <!-- lastUpdBy Column -->
-    <ng-container matColumnDef="lastUpdBy">
+    <!-- last_UPD_BY Column -->
+    <ng-container matColumnDef="last_UPD_BY">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by lastUpdBy"
+        sortActionDescription="Sort by last_UPD_BY"
       >
         Last Upd By
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.lastUpdBy }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.last_UPD_BY }}</td>
     </ng-container>
 
-    <!-- groupType Column -->
-    <ng-container matColumnDef="groupType">
+    <!-- group_TYPE Column -->
+    <ng-container matColumnDef="group_TYPE">
       <th
         mat-header-cell
         *matHeaderCellDef
         mat-sort-header
-        sortActionDescription="Sort by groupType"
+        sortActionDescription="Sort by group_TYPE"
       >
         Group Type
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.groupType }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.group_TYPE }}</td>
+    </ng-container>
+
+    <!-- actions Column -->
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Actions</th>
+      <td mat-cell *matCellDef="let element">
+        <button class="btn btn-primary mx-2">Edit</button>
+        <button class="btn btn-danger">Delete</button>
+      </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
