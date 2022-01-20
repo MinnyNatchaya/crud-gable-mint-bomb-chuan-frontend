@@ -1,8 +1,9 @@
 import { LiveAnnouncer } from '@angular/cdk/a11y';
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Data } from 'src/app/models/data.model';
+import { DataService } from 'src/app/services/data.service';
 
 const ELE_DATA: Data[] = [
   {
@@ -114,7 +115,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css'],
 })
-export class TableComponent implements AfterViewInit {
+export class TableComponent implements AfterViewInit, OnInit {
   // displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   // dataSource = new MatTableDataSource(ELEMENT_DATA);
   displayedColumns: string[] = [
@@ -135,13 +136,18 @@ export class TableComponent implements AfterViewInit {
   ];
   dataSource = new MatTableDataSource(ELE_DATA);
 
-  constructor(private _liveAnnouncer: LiveAnnouncer) {}
+  constructor(
+    private _liveAnnouncer: LiveAnnouncer,
+    private dataService: DataService
+  ) {}
 
   @ViewChild(MatSort) sort: MatSort = new MatSort();
 
   ngAfterViewInit() {
     this.dataSource.sort = this.sort;
   }
+
+  ngOnInit(): void {}
 
   /** Announce the change in sort state for assistive technology. */
   announceSortChange(sortState: Sort) {

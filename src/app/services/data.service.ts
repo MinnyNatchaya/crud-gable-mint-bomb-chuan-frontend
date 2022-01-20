@@ -10,7 +10,7 @@ import { Data } from '../models/data.model';
 @Injectable({
   providedIn: 'root',
 })
-export class DataServiceService {
+export class DataService {
   // API
   API: string = `http://localhost:8080/data`;
 
