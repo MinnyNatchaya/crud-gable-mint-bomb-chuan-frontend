@@ -12,7 +12,7 @@ import { Data } from '../models/data.model';
 })
 export class DataService {
   // API
-  API: string = `http://localhost:8080/data`;
+  API: string = `http://localhost:8080/sffCfgLovs`;
 
   // Http header
   httpHeaders = new HttpHeaders().set('Content-Type', 'application/json');
