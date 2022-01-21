@@ -52,13 +52,14 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
     this.sub = this.activatedRoute.paramMap.subscribe((params) => {
       this.id = params.get('id') || '';
+      console.log(this.id);
       if (this.id !== 'add') {
         this.isEdit = true;
         this.dataService.getOne(this.id).subscribe((data) => {
           this.addForm.setValue({
             ...data,
-            last_UPD: data.last_UPD.split('T')[0],
-            created: data.created.split('T')[0],
+            lastUpd: data.lastUpd.split('T')[0], //yyyy-mm-dd  // yyyy-mm-ddT45445:54:45 --> ["yyyy-mm-dd","45445:54:45"]
+            create: data.create.split('T')[0],
           });
         });
       } else {
