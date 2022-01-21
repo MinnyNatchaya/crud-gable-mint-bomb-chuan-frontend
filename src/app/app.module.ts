@@ -13,7 +13,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { FormComponent } from './components/form/form.component';
 
 @NgModule({
-  declarations: [AppComponent, TableComponent, HeaderComponent, FormComponent],
+  declarations: [
+    AppComponent,
+    TableComponent,
+    TableComponent,
+    HeaderComponent,
+    FormComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -21,9 +27,9 @@ import { FormComponent } from './components/form/form.component';
     MatTableModule,
     MatSortModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

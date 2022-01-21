@@ -6,7 +6,6 @@ import { TableComponent } from './pages/table/table.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/data' },
   { path: 'data', component: TableComponent },
-  { path: 'form/add', component: FormComponent },
   { path: 'form/:id', component: FormComponent },
 ];
 
@@ -14,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

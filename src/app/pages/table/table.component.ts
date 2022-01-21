@@ -162,7 +162,7 @@ export class TableComponent implements OnInit, AfterViewInit {
   }
 
   handleClickEdit(id: String) {
-    this.router.navigate(['/add-expense', id]);
+    this.router.navigate(['/form', id]);
   }
 
   handleClickDelete(id: String) {

@@ -1,173 +1,308 @@
 <div class="container">
-    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
-        <div class="row">
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="row_ID">rowId</label>
-                    <input type="text" class="form-control" id="row_ID" name="row_ID" formControlName="row_ID">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="par_ROW_ID">parRowId</label>
-                    <input type="text" class="form-control" id="par_ROW_ID" name="par_ROW_ID"
-                        formControlName="par_ROW_ID">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_TYPE">lovType</label>
-                    <input type="text" class="form-control" id="lov_TYPE" name="lov_TYPE" formControlName="lov_TYPE">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_NAME">lovName</label>
-                    <input type="text" class="form-control" id="lov_NAME" name="lov_NAME" formControlName="lov_NAME">
-                </div>
-            </div>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="rowId">rowId</label>
+          <input
+            type="text"
+            class="form-control"
+            id="rowId"
+            name="rowId"
+            formControlName="rowId"
+          />
         </div>
-        <div class="row">
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="display_VAL">displayVal</label>
-                    <input type="text" class="form-control" id="display_VAL" name="display_VAL"
-                        formControlName="display_VAL">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL1">lovVal1</label>
-                    <input type="text" class="form-control" id="lov_VAL1" name="lov_VAL1" formControlName="lov_VAL1">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL2">lovVal2</label>
-                    <input type="text" class="form-control" id="lov_VAL2" name="lov_VAL2" formControlName="lov_VAL2">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL3">lovVal3</label>
-                    <input type="text" class="form-control" id="lov_VAL3" name="lov_VAL3" formControlName="lov_VAL3">
-                </div>
-            </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="parRowId">parRowId</label>
+          <input
+            type="text"
+            class="form-control"
+            id="parRowId"
+            name="parRowId"
+            formControlName="parRowId"
+          />
         </div>
-        <div class="row">
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL4">lovVal4</label>
-                    <input type="text" class="form-control" id="lov_VAL4" name="lov_VAL4" formControlName="lov_VAL4">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL5">lovVal5</label>
-                    <input type="text" class="form-control" id="lov_VAL5" name="lov_VAL5" formControlName="lov_VAL5">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL6">lovVal6</label>
-                    <input type="text" class="form-control" id="lov_VAL6" name="lov_VAL6" formControlName="lov_VAL6">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL7">lovVal7</label>
-                    <input type="text" class="form-control" id="lov_VAL7" name="lov_VAL7" formControlName="lov_VAL7">
-                </div>
-            </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovType">lovType</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovType"
+            name="lovType"
+            formControlName="lovType"
+          />
         </div>
-        <div class="row">
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL8">lovVal8</label>
-                    <input type="text" class="form-control" id="lov_VAL8" name="lov_VAL8" formControlName="lov_VAL8">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL9">lovVal9</label>
-                    <input type="text" class="form-control" id="lov_VAL9" name="lov_VAL9" formControlName="lov_VAL9">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="lov_VAL10">lovVal10</label>
-                    <input type="text" class="form-control" id="lov_VAL10" name="lov_VAL10" formControlName="lov_VAL10">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="active_FLG">activeFlg</label>
-                    <input type="text" class="form-control" id="active_FLG" name="active_FLG"
-                        formControlName="active_FLG">
-                </div>
-            </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovName">lovName</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovName"
+            name="lovName"
+            formControlName="lovName"
+          />
         </div>
-        <div class="row">
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="text_DESC">textDesc</label>
-                    <input type="text" class="form-control" id="text_DESC" name="text_DESC" formControlName="text_DESC">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="order_BY">orderBy</label>
-                    <input type="text" class="form-control" id="order_BY" name="order_BY" formControlName="order_BY">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="modification_NUM">modificationNum</label>
-                    <input type="number" class="form-control" id="modification_NUM" name="modification_NUM"
-                        formControlName="modification_NUM">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="created">created</label>
-                    <input type="datetime-local" class="form-control" id="created" name="created"
-                        formControlName="created">
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="displayVal">displayVal</label>
+          <input
+            type="text"
+            class="form-control"
+            id="displayVal"
+            name="displayVal"
+            formControlName="displayVal"
+          />
         </div>
-        <div class="row">
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="created_BY">createdBy</label>
-                    <input type="text" class="form-control" id="created_BY" name="created_BY"
-                        formControlName="created_BY">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="last_UPD">lastUpd</label>
-                    <input type="datetime-local" class="form-control" id="last_UPD" name="last_UPD"
-                        formControlName="last_UPD">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="last_UPD_BY">lastUpdBy</label>
-                    <input type="text" class="form-control" id="last_UPD_BY" name="last_UPD_BY"
-                        formControlName="last_UPD_BY">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="group_TYPE">groupType</label>
-                    <input type="text" class="form-control" id="group_TYPE" name="group_TYPE"
-                        formControlName="group_TYPE">
-                </div>
-            </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal1">lovVal1</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal1"
+            name="lovVal1"
+            formControlName="lovVal1"
+          />
         </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal2">lovVal2</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal2"
+            name="lovVal2"
+            formControlName="lovVal2"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal3">lovVal3</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal3"
+            name="lovVal3"
+            formControlName="lovVal3"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal4">lovVal4</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal4"
+            name="lovVal4"
+            formControlName="lovVal4"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal5">lovVal5</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal5"
+            name="lovVal5"
+            formControlName="lovVal5"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal6">lovVal6</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal6"
+            name="lovVal6"
+            formControlName="lovVal6"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal7">lovVal7</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal7"
+            name="lovVal7"
+            formControlName="lovVal7"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal8">lovVal8</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal8"
+            name="lovVal8"
+            formControlName="lovVal8"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal9">lovVal9</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal9"
+            name="lovVal9"
+            formControlName="lovVal9"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lovVal10">lovVal10</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lovVal10"
+            name="lovVal10"
+            formControlName="lovVal10"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="activeFlg">activeFlg</label>
+          <input
+            type="text"
+            class="form-control"
+            id="activeFlg"
+            name="activeFlg"
+            formControlName="activeFlg"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="textDesc">textDesc</label>
+          <input
+            type="text"
+            class="form-control"
+            id="textDesc"
+            name="textDesc"
+            formControlName="textDesc"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="orderBy">orderBy</label>
+          <input
+            type="number"
+            class="form-control"
+            id="orderBy"
+            name="orderBy"
+            formControlName="orderBy"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="modificationNum">modificationNum</label>
+          <input
+            type="number"
+            class="form-control"
+            id="modificationNum"
+            name="modificationNum"
+            formControlName="modificationNum"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="created">created</label>
+          <input
+            type="date"
+            class="form-control"
+            id="created"
+            name="created"
+            formControlName="created"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="createBy">createdBy</label>
+          <input
+            type="text"
+            class="form-control"
+            id="createBy"
+            name="createBy"
+            formControlName="createBy"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lastUpd">lastUpd</label>
+          <input
+            type="date"
+            class="form-control"
+            id="lastUpd"
+            name="lastUpd"
+            formControlName="lastUpd"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="lastUpdBy">lastUpdBy</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastUpdBy"
+            name="lastUpdBy"
+            formControlName="lastUpdBy"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="groupType">groupType</label>
+          <input
+            type="text"
+            class="form-control"
+            id="groupType"
+            name="groupType"
+            formControlName="groupType"
+          />
+        </div>
+      </div>
+    </div>
 
-        <div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
+    <div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
 </div>
